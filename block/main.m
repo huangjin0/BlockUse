@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import <Foundation/Foundation.h>
 
 void (^block2)(int) = ^(int a) {
     
@@ -15,18 +16,14 @@ void (^block2)(int) = ^(int a) {
     NSLog(@"%d",a);
 //    block2(a);
 };
-
 //void callBlock( void ^block2(int a))
 //{
 //    
 //}
-
 int main(int argc, char * argv[]) {
     @autoreleasepool {
         
         block2(10);
-        
-        
         
         
         
